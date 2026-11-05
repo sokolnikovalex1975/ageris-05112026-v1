@@ -35,6 +35,7 @@ if (!window.AGERIS_LIVE) {
 <link rel="preload" href="wp-content/themes/ageris/assets/fonts/montserrat/montserrat-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="wp-content/themes/ageris/assets/fonts/montserrat/montserrat-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" type="image/webp" fetchpriority="high" media="(min-width: 768px)" imagesrcset="wp-content/themes/ageris/assets/img/bg/hero-1280.webp 1280w, wp-content/themes/ageris/assets/img/bg/hero-1360.webp 1360w, wp-content/themes/ageris/assets/img/bg/hero-1600.webp 1600w, wp-content/themes/ageris/assets/img/bg/hero-1920.webp 1920w, wp-content/themes/ageris/assets/img/bg/hero-2560.webp 2560w" imagesizes="(max-width: 991px) 1200px, (max-width: 1199px) 1470px, (max-width: 1355px) 1355px, 100vw">
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" media="(max-width: 767px)" imagesrcset="wp-content/themes/ageris/assets/img/bg/hero-mob-480.webp 480w, wp-content/themes/ageris/assets/img/bg/hero-mob-768.webp 768w, wp-content/themes/ageris/assets/img/bg/hero-mob-960.webp 960w" imagesizes="(max-width: 767px) calc(100vw - 40px), 1px">
 <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
 <title>Защищаем бизнес от вредителей по стандартам ХАССП | Центр дезинфекции «Агерис»</title>
 
@@ -152,8 +153,13 @@ radist_tracker({
 			<div class="grid grid-cols-2 items-center">
 				<div class="grid-item">
 					<div class="hero-item flex flex-col gap-lg">
-						<h1>Пест-контроль<br> по&nbsp;ХАССП для&nbsp;бизнеса</h1>
-						<p>Не разовые обработки, а системная программа мониторинга<br>и предотвращения. Соответствие ХАССП, ISO 22000, требованиям Роспотребнадзора.</p>
+						<h1>Пест-контроль по&nbsp;ХАССП вместо разовых обработок</h1>
+						<p>Системная программа мониторинга<br>и предотвращения. Соответствие ХАССП, ISO 22000, требованиям Роспотребнадзора.</p>
+						<picture class="hero-mobile-pic">
+							<source media="(min-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+							<source type="image/webp" srcset="wp-content/themes/ageris/assets/img/bg/hero-mob-480.webp 480w, wp-content/themes/ageris/assets/img/bg/hero-mob-768.webp 768w, wp-content/themes/ageris/assets/img/bg/hero-mob-960.webp 960w" sizes="(max-width: 767px) calc(100vw - 40px), 1px">
+							<img src="wp-content/themes/ageris/assets/img/bg/hero-mob.jpg" alt="" width="768" height="521" fetchpriority="high" decoding="async">
+						</picture>
 						<div class="hero-btn flex gap-base">
 							<a data-fancybox="" data-src="#audit" href="javascript:;">Запросить бесплатный аудит</a>
 							<a href="#ipm">Узнать больше</a>

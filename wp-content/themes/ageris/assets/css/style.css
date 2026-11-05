@@ -961,7 +961,7 @@ Version: 0.1.0
 	.form {
 		border-radius: 8px;
 	}
-	.hero picture {
+	.hero > .container > .grid > picture {
 		width: 100% !important;
 		height: 100% !important;
 		position: absolute;
@@ -969,11 +969,14 @@ Version: 0.1.0
 		right: 0;
 		z-index: -1;
 	}
-	.hero picture img {
+	.hero > .container > .grid > picture img {
 		width: 100% !important;
 		height: 100% !important;
 		object-fit: cover;
 		object-position: top;
+	}
+	.hero-mobile-pic {
+		display: none;
 	}
 	/**
 	* @section cards
@@ -1681,6 +1684,17 @@ Version: 0.1.0
 	@media (max-width: 767.98px) {
 		.hero {
 			background-color: var(--color-bg);
+		}
+		.hero-mobile-pic {
+			display: block;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+		.hero-mobile-pic img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
 		}
 		.specifics .card img {
 			width: 100%;
